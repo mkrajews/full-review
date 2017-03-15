@@ -1,28 +1,111 @@
 <!DOCTYPE html>
 <html ng-app="app">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="/styles/master.css" media="screen" title="no title">
 
-  </head>
-  <body ng-controller="jokeCtrl">
-    <ul>
-      <li ui-sref="joke">Dumb Jokes</li>
-      <li ui-sref="kittenz">Cute Kittens</li>
-    </ul>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="/styles/master.css" media="screen" title="no title">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body ng-controller="jokeCtrl">
+  <ul>
+    <li ui-sref="joke">Dumb Jokes</li>
+    <li ui-sref="kittenz">Cute Kittens</li>
+  </ul>
 
 
-    <ui-view></ui-view>
+  <ui-view></ui-view>
+
+  <div class="container">
+    <div class="page-header">
+      <h1 class="text-center">Hot or Not</h1>
+    </div>
+    <p class="lead text-center">Go ahead, make your choice</p>
+    <div class="container">
+      <div class="row stylish-panel">
+        <div class="col-md-4">
+          <div>
+            <img src="http://lorempixel.com/200/200/abstract/1/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+            <h2>Webdesigner</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="btn btn-primary" title="See more">See works »</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <img src="http://lorempixel.com/200/200/abstract/2/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+            <h2>Photographer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="btn btn-primary" title="See more">See works »</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <img src="http://lorempixel.com/200/200/abstract/3/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+            <h2>Copywriter</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="btn btn-primary" title="See more">See works »</a>
+          </div>
+        </div>
+      </div>
+      <div class="row stylish-panel">
+        <div class="col-md-4">
+          <div>
+            <img src="http://lorempixel.com/200/200/abstract/4/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+            <h2>Webdesigner</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="btn btn-primary" title="See more">See works »</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <img src="http://lorempixel.com/200/200/abstract/5/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+            <h2>Photographer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="btn btn-primary" title="See more">See works »</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <img src="http://lorempixel.com/200/200/abstract/6/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+            <h2>Copywriter</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="btn btn-primary" title="See more">See works »</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-    <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"   integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="   crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-    <script src="./js/app.js" charset="utf-8"></script>
-    <script src="./js/controllers/mainCtrl.js" charset="utf-8"></script>
-    <script src="./js/services/mainSvc.js" charset="utf-8"></script>
 
-  </body>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+  <script src="./js/app.js" charset="utf-8"></script>
+  <script src="./js/controllers/mainCtrl.js" charset="utf-8"></script>
+  <script src="./js/services/mainSvc.js" charset="utf-8"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
