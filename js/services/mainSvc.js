@@ -1,7 +1,6 @@
 angular.module('app')
   .service('mainSvc', function($http) {
 
-
     this.getJoke = function() {
       return $http({
         method: 'GET',
@@ -19,7 +18,8 @@ angular.module('app')
       return kittenArr[rando];
     };
 
-  });
+    });
+
 
 
 kittenArr = [

@@ -7,6 +7,7 @@ angular.module('app')
         console.log(response);
         $scope.joke = response;
       });
+
     };
     // $scope.getJoke();
 
