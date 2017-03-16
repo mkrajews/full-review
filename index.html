@@ -12,11 +12,13 @@
 
 <body ng-controller="jokeCtrl">
   <ul>
-    <li ui-sref="joke">Dumb Jokes</li>
-    <li ui-sref="kittenz">Cute Kittens</li>
+    <li class="btn" ui-sref="joke">Dumb Jokes</li>
+    <li class="btn" ui-sref="kittenz">Cute Kittens</li>
   </ul>
-
-
+<!-- <div class="btn">
+  <button ui-sref="joke">Dumb Jokes</button>
+  <button ui-sref="kittenz">Cute Kittens</button>
+</div> -->
   <ui-view></ui-view>
 
   <div class="container">
